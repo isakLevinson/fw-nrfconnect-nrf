@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: LicenseRef-BSD-5-Clause-Nordic
  */
 
+#include <sys_def.h>
+
 #include <zephyr.h>
 #include <stdio.h>
 #include <uart.h>

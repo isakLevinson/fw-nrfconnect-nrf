@@ -10,7 +10,7 @@
 #include <string.h>
 #include <at_host.h>
 
-void main(void)
+void test(void)
 {
 	int err;
 
@@ -24,7 +24,7 @@ void main(void)
 	}
 
 	while (1) {
-          at_host_process();
+		at_host_process();
 	}
 
         printf("ERROR: unexpected exit\r\n");

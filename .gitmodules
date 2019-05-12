@@ -1,0 +1,6 @@
+[submodule "services"]
+	path = services
+	url = git@bitbucket.org:isaklevinson/services.git
+[submodule "dbgterm"]
+	path = dbgterm
+	url = git@bitbucket.org:isaklevinson/dbgterm.git

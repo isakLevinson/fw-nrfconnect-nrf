@@ -47,7 +47,6 @@ int orientation_detector_poll(
 	return 0;
 }
 
-
 void orientation_detector_init(struct device *accel_device)
 {
 	dev = accel_device;
