@@ -28,6 +28,8 @@
 #define MAX_NUM_POSSIBLE_ENTRIES		32
 #define DEFAULT_TERMINAL_WIDTH			128
 
+#define FLASH_SECTOR_SIZE  8192
+
 #define MEMCMP	memCmp
 #define MEMCPY	memCpy
 #define MEMSET	memSet
