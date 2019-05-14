@@ -10,16 +10,20 @@ include($ENV{ZEPHYR_BASE}/cmake/app/boilerplate.cmake NO_POLICY_SCOPE)
 project(NONE)
 
 include_directories(inc)
+include_directories(src)
 include_directories(../services)
 include_directories(../dbgterm)
 
-target_sources(app PRIVATE "src/main.c")
-
+file(GLOB src "src/*.h" "src/*.c")
 file(GLOB services "../services/*.h" "../services/*.c")
 file(GLOB dbgterm "../dbgterm/*.h" "../dbgterm/*.c")
 
-add_library(services ${services})
-add_library(dbgterm  ${dbgterm})
+target_sources(app PRIVATE ${src})
+target_sources(app PRIVATE ${services})
+target_sources(app PRIVATE ${dbgterm})
+
+#add_library(services STATIC ${services})
+#add_library(dbgterm  STATIC ${dbgterm})
 
 
 #file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.c")
