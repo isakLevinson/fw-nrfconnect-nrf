@@ -18,8 +18,8 @@ target_sources(app PRIVATE "src/main.c")
 file(GLOB services "../services/*.h" "../services/*.c")
 file(GLOB dbgterm "../dbgterm/*.h" "../dbgterm/*.c")
 
-add_executable(services ${services})
-add_executable(dbgterm ${dbgterm})
+add_library(services ${services})
+add_library(dbgterm  ${dbgterm})
 
 
 #file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.c")

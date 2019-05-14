@@ -10,10 +10,10 @@
 #include "memory.h"
 
 #define VERSION			"0.62"
-#define _PROMPT			"LTE"
+#define PROMPT			"LTE"
 #define MAX_PROMPT_SIZE	8
 
-
+#define PROJ_OPT_FEATURE_GEN_DEBUG_CODE
 #define PROJ_OPT_FEATURE_GEN_DEBUG_MENUS
 #define PROJ_OPT_FEATURE_GEN_DEBUG_PRINTS
 #define DBG_PRINT_MAX_LINE_SIZE			256
